@@ -45,13 +45,31 @@ class Crypto extends Component {
         },
         {
           id: 'cardano',
-        name: 'Cardano',
-        symbol: 'ADA',
-        price_usd: '1',
-        percent_change_1h: '0',
-        percent_change_24h: '0',
-        percent_change_7d: '0',
-      }
+          name: 'Cardano',
+          symbol: 'ADA',
+          price_usd: '1',
+          percent_change_1h: '0',
+          percent_change_24h: '0',
+          percent_change_7d: '0',
+        },
+        {
+          id: 'stellar',
+          name: 'Stellar',
+          symbol: 'XLM',
+          price_usd: '1',
+          percent_change_1h: '0',
+          percent_change_24h: '0',
+          percent_change_7d: '0',
+        },
+        {
+          id: 'holo',
+          name: 'Holo',
+          symbol: 'HOT',
+          price_usd: '1',
+          percent_change_1h: '0',
+          percent_change_24h: '0',
+          percent_change_7d: '0',
+        }
       ],
     }
   }
