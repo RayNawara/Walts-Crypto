@@ -9,10 +9,11 @@ class Crypto extends Component {
     axios
       .get('https://api.coinmarketcap.com/v1/ticker/?limit=100')
       .then(response => {
-        const wanted = ['bitcoin', 'ripple', 'cardano', 'stellar', 'holo']
+        const wanted = ['bitcoin', 'ripple', 'cardano', 'stellar', 'holo', 'ethereum', 'monero', 'nem', 'omisego']
         const result = response.data.filter(currency =>
           wanted.includes(currency.id),
         )
+        console.log(result);
         this.setState({ data: result })
       })
       .catch(err => console.log(err))
